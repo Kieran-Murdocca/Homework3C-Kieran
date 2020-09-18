@@ -4,6 +4,8 @@
 // Homework 3
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <readline/readline.h>
 
 int digit_sum(int n) {
   if (n==0)
@@ -14,8 +16,8 @@ int digit_sum(int n) {
 }
 
 int main() {
-  int num= (scanf("Enter an int: "));
+  int num= atoi(readline("Enter an int: "));
   int result = digit_sum(num);
-  printf("sum of digits of %d is %d\n.", num, result);
+  printf("sum of digits of %d is %d.\n", num, result);
   return 0;
 }
